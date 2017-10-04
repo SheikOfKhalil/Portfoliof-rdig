@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+* { 
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Overskrift;
+    src: url("VLADIMIR.TTF");
+    
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+}
+/* vh=view height(størrelsen af højden af hvad man kan se på skærmen) vw=view weight (-"- bredden) */
+.intro {
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/forside-baggrund.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;  
+    color: #fff;
+}
+h1 {
+    font-family: Overskrift;
+    font-size: 60px;
+    font-weight: 300;
+}
+.intro h2 {
+    font-weight: 400;
+}
+.knapper {
+    width: 100%;
+    max-width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.knap {
+    width: 30%;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.knap:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+/* begyndelse på portfolio */
+.header {
+    width: 100vw;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+.header h1 {
+    color: #fff;
+}
+.portfolio {
+    background: url("../img/portfolio-baggrund.jpg") no-repeat;
+    background-size: cover;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    color: #fff;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 6px;
+}
+.active {
+    border-bottom: 1px solid #fff;
+}
+.indhold {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 12px;
+        
+}
+.projekter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.projekt {
+    width: 30%;
+}
+.projekt img {
+    width: 100%;
+}
+/* begyndelse på om mig siden*/
+
+.om-mig h1, .om-mig .menu {
+    color: #8d8d8d;
+}
+.om-mig .active {
+    border-bottom: 1px solid #8d8d8d;
+}
+.ommig {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.tekst, .billede {
+    width: 48%;
+    
+}
+.billede img {
+    border-radius: 30%;
+    width: 50%;
+    float: right;
+}
+.tekst {
+    font-size: 20px;
+}
+.interesser {
+    width: 100vw;
+    background: #b7b7b7;
+    border-top: 2px solid #939292;
+    border-bottom: 2px solid #939292;
+    margin-top: 12px;
+    padding: 10px;
+}
+.interesseindhold {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.interesse {
+    width: 30%;
+}
+.interesse img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+.interesse p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+/* begyndelse på kontakt siden*/
+.kontakt {
+    background: url("../img/kontaktbag.jpg") no-repeat;
+    background-size: cover;
+}
+.kontakt .tekst {
+    color: #fff;
+}
+.textbox {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 5px;
+    
+}
+.sendknap {
+   width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 7px;
+    margin-bottom: 5px;   
+}
+.titel {
+    text-decoration: underline;
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+.katbillede {
+   margin-top: 20px;
+    padding: 0;
+    margin-bottom: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.katbillede p {
+    color: lightgrey;
+    margin-right: 150px;
+    margin-top: 150px;
+    margin-left: 50px;    
+}
+.heliprojekt {
+    margin-top: 20px;
+    padding: 0;
+    margin-bottom: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.heliprojekt p {
+      color: lightgrey;
+    margin-right: 0px;
+    margin-top: 70px;
+    margin-left: 15px;
+    text-align: center;  
+}
+.broprojekt {
+    margin-top: 20px;
+    padding: 0;
+    margin-bottom: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.broprojekt p {
+    color:lightgray;
+    margin-right: 0px;
+    margin-top: 70px;
+    margin-left: 15px;
+    text-align: center;
+}
